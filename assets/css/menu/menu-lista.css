@@ -1,7 +1,6 @@
 .menu__lista {
   display: flex;
   list-style: none;
-  text-decoration: none;
 }
 
 .menu__lista li {
@@ -11,7 +10,12 @@
   transition: color .3s ease-in-out;
 }
 
-.menu__lista li:hover {
+.menu__lista li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu__lista li a:hover {
   color: #808080;
 }
 
