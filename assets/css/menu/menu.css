@@ -1,0 +1,8 @@
+.menu {
+  align-items: center;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  /* text-transform: lowercase; */
+  padding: 1rem 0;
+}

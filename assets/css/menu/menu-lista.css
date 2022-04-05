@@ -1,0 +1,24 @@
+.menu__lista {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu__lista li {
+  margin-right: 1.25rem;
+  cursor: pointer;
+  font-weight: 300;
+  transition: color .3s ease-in-out;
+}
+
+.menu__lista li:hover {
+  color: #808080;
+}
+
+.menu__lista li:last-child {
+  font-weight: 500;
+}
+
+.menu__lista li:last-child {
+  margin-right: 0rem;
+}
