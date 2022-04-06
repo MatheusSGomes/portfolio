@@ -1,0 +1,9 @@
+.apresentacao__foto {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .apresentacao__foto {
+    display: flex;
+  }
+}
