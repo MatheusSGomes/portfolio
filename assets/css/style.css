@@ -10,3 +10,22 @@ html {
   scroll-margin-top: .8rem;
   background: lightgreen;
 }
+
+.container {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+      background-color: lightblue;
+      padding-left: calc((100% - 940px)/2);
+      padding-right: calc((100% - 940px)/2);
+  }
+}
+
+/* .container {
+  background-color: lightblue;
+  max-width: 960px;
+  margin: 0 auto;
+} */

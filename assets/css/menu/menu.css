@@ -4,5 +4,6 @@
   display: flex;
   justify-content: space-between;
   /* text-transform: lowercase; */
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
