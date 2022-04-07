@@ -1,8 +1,29 @@
 .sobre {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .sobre h2 {
   font-size: 1.5rem;
+}
+
+.sobre__imagem {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .sobre__descricao {
+    max-width: 550px;
+  }
+
+  .sobre__imagem {
+    display: inline-block;
+  }
+
+  .sobre__imagem img {
+    border-radius: 5px;
+  }
 }
