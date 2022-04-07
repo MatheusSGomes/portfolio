@@ -1,8 +1,9 @@
 .menu {
   align-items: center;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #f7f7f7;
   /* text-transform: lowercase; */
   padding-top: 1rem;
   padding-bottom: 1rem;

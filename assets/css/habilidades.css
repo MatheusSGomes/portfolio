@@ -1,0 +1,85 @@
+.habilidades {
+  background-color: #eee;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+ 
+.habilidades h2 {
+  text-align: center;
+}
+
+.habilidades__caixas {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.habilidade__box {
+  align-items: flex-start;
+  display: flex;
+  flex-shrink: 0;
+
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: .5rem;
+  width: 130px;
+  height: 130px;
+}
+
+.habilidade__box p {
+  margin: 0;
+  color: #656565;
+}
+
+.habilidade__box.html5:hover svg, 
+.habilidade__box.html5:hover p {
+  transition: all .5s ease-in-out;
+  fill: #e24100;
+  color: #e24100;
+}
+
+.habilidade__box.css3:hover svg, 
+.habilidade__box.css3:hover p {
+  transition: all .5s ease-in-out;
+  fill: #1b73ba;
+  color: #1b73ba;
+}
+
+.habilidade__box.javascript:hover svg, 
+.habilidade__box.javascript:hover p {
+  transition: all .5s ease-in-out;
+  fill: #ecf300;
+  color: #ecf300;
+}
+
+.habilidade__box.node-js:hover path, 
+.habilidade__box.node-js:hover p {
+  transition: all .5s ease-in-out;
+  fill: #83cd29;
+  color: #83cd29;
+}
+
+.habilidade__box.react:hover svg, 
+.habilidade__box.react:hover p {
+  transition: all .5s ease-in-out;
+  fill: #6fd7ff;
+  color: #6fd7ff;
+}
+
+.habilidade__box.python:hover path:first-child {
+  transition: all .2s ease-in-out;
+  fill: #0277BD;
+}
+
+.habilidade__box.python:hover path:last-child {
+  transition: all .5s ease-in-out;
+  fill: #FFC107;
+}
+
+.habilidade__box.python:hover p {
+  transition: all .5s ease-in-out;
+  color: #000000;
+}
