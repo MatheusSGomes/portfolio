@@ -1,0 +1,36 @@
+.menu__lista--mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0rem;
+  text-align: center;
+}
+
+.menu__lista--mobile ul {
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.menu__lista--mobile li {
+  margin-right: 0rem;
+  margin-left: 0rem;
+  list-style: none;
+
+  cursor: pointer;
+}
+
+.menu__lista--mobile li a:hover {
+  color: #808080;
+}
+
+.menu__lista--mobile li a {
+  transition: color .3s ease-in-out;
+  color: #333; 
+  text-decoration: none;
+  line-height: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__lista--mobile {
+    display: none;
+  }
+}

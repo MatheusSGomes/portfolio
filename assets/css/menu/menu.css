@@ -8,3 +8,8 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+.menu > img:hover {
+  opacity: .6;
+  cursor: pointer;
+}
