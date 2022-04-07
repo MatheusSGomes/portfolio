@@ -5,7 +5,6 @@ menuHamburguer.addEventListener('click', () => {
   menu_mobile.classList.add('ativo');
 })
 
-
 const closeButton = document.querySelector('#close-button');
 
 closeButton.addEventListener('click', (event) => {
