@@ -52,14 +52,24 @@
     text-align: center;
 }
 
+.projeto__informacoes--botoes {
+  display: flex;
+  justify-content: center;
+}
+
 .projeto__informacoes button {
   border: 0px;
   background-color: transparent;
   padding: 0px;
+  opacity: .5;
+}
+
+.projeto__informacoes button:last-child {
+  margin-left: 10px;
 }
 
 .projeto__informacoes button:hover {
-  opacity: .7;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -72,8 +82,8 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-left: 4px;
-  padding-right: 7px;
+  /* padding-left: 4px; */
+  /* padding-right: 7px; */
 }
 
 .mais-projetos {
@@ -103,5 +113,10 @@
   .projeto__informacoes h3,
   .projeto__informacoes p {
     text-align: left;
+  }
+
+  .projeto__informacoes--botoes {
+    display: flex;
+    justify-content: left;
   }
 }
