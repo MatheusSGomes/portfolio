@@ -1,0 +1,21 @@
+.contato {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contato__container {
+  display: flex;
+}
+
+.contato__imagem {
+  max-width: 200px;
+}
+
+.contato__formulario {
+
+}
+
+.contato img {
+  border-radius: 5px;
+  width: 100%;
+}
