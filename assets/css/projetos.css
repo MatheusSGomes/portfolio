@@ -1,4 +1,3 @@
-
 .projetos {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -9,18 +8,37 @@
 
 .projetos h2 {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projetos__sessoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .projeto {
   display: flex;
-  flex-direction: column;
-  row-gap: 10px;
   align-items: center;
-  /* justify-content: space-around; */
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
+/* .projetos__lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+} */
+
+/* .projetos__lista:nth-child(1) {
+  background-color: lightgray;
+} */
+
 .projeto__amostra {
-  width: 600px;
+  width: 500px;
 }
 
 .projeto__amostra img {
@@ -29,13 +47,27 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
 }
 
-.projeto__informacoes {}
+.projeto__informacoes h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.projeto__informacoes p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.mais-projetos {
+  text-decoration: none;
+  color: #333;
+}
+
+.mais-projetos:hover {
+  opacity: .7;
+}
 
 @media screen and (min-width: 968px) {
   .projeto {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    row-gap: 10px;
   }
 }
