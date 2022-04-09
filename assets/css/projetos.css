@@ -52,13 +52,43 @@
     text-align: center;
 }
 
+.projeto__informacoes button {
+  border: 0px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.projeto__informacoes button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.projeto__informacoes button::after {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-image: url('../img/arrow-up-right.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 4px;
+  padding-right: 7px;
+}
+
 .mais-projetos {
+  margin-top: 2rem;
   text-decoration: none;
   color: #333;
+  border: 1px solid #808080;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background .3s ease-in-out;
 }
 
 .mais-projetos:hover {
   opacity: .7;
+  background-color: #efefef;
 }
 
 @media screen and (min-width: 968px) {
