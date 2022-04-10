@@ -26,11 +26,6 @@
   margin-bottom: 25px;
 }
 
-.projeto:nth-child(2) {
-  /* background: blue; */
-  flex-direction: column-reverse;
-}
-
 .projeto__amostra {
   max-width: 500px;
 }
@@ -108,6 +103,7 @@
 
   .projeto:nth-child(2) {
     flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .projeto__informacoes h3,
