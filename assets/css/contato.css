@@ -48,21 +48,27 @@
   resize: vertical;
 }
 
-.contato__formulario input:focus {
-  border-bottom: 3px solid blue;
+.contato__formulario input:focus,
+.contato__formulario textarea:focus {
+  border-bottom: 2px solid #d4d5ce;
   outline: none;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
 }
 
 .contato__formulario input[type=submit] {
   width: 12rem;
   padding: .7rem .4rem;
   color: black;
-  /* font-style: bold; */
   background-color: #d4d5ce;
 }
 
 .contato__formulario input[type=submit]:hover {
   opacity: .6;
+}
+
+.contato__formulario input[value="Enviar mensagem"] {
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
