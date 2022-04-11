@@ -56,6 +56,10 @@
   border-bottom-right-radius: 0rem;
 }
 
+.contato__formulario span {
+  display: none;
+}
+
 .contato__formulario input[type=submit] {
   width: 12rem;
   padding: .7rem .4rem;
