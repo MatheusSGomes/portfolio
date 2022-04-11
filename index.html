@@ -332,11 +332,31 @@
           <p>Querendo entrar em contato comigo?</p>
           <p>Preencha o formulário, retorno o mais rápido possível.</p>
           <form action="" method="post">
-              <input type="text" placeholder="Nome">
-              <input type="email" placeholder="E-mail">
-              <input type="text" placeholder="Assunto">
-              <textarea placeholder="Mensagem"></textarea>
-              <input type="submit" value="Enviar mensagem">
+            <div class="input-container">
+              <input type="text" placeholder="Nome" title="O campo nome não pode ficar vazio." required>
+              <label class="input-label" for="nome"></label>
+              <span class="input__span--erro">Este campo não está válido</span>
+            </div>
+
+            <div class="input-container">
+              <input type="email" placeholder="E-mail" required>
+              <label class="input-label" for="nome"></label>
+              <span class="input__span--erro">Este campo não está válido</span>
+            </div>
+
+            <div class="input-container">
+              <input type="text" placeholder="Assunto" required>
+              <label class="input-label" for="nome"></label>
+              <span class="input__span--erro">Este campo não está válido</span>
+            </div>
+
+            <div class="input-container">
+              <textarea placeholder="Mensagem" required></textarea>
+              <label class="input-label" for="nome"></label>
+              <span class="input__span--erro">Este campo não está válido</span>
+            </div>
+
+            <input type="submit" value="Enviar mensagem">
           </form>
         </div>
     </section>
@@ -347,5 +367,6 @@
     <p>2022</p>
   </footer>
   <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/validacao-formulario.js"></script>
 </body>
 </html>
