@@ -44,6 +44,14 @@
   border-radius: 5px;
 }
 
+.contato__formulario input:invalid,
+.contato__formulario textarea:invalid {
+  border-bottom: 2px solid lightcoral;
+  outline: none;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
 .contato__formulario textarea {
   resize: vertical;
 }
@@ -60,11 +68,22 @@
   display: none;
 }
 
+.input__span--erro {
+  color: lightcoral;
+  font-size: .9rem;
+}
+
 .contato__formulario input[type=submit] {
   width: 12rem;
   padding: .7rem .4rem;
   color: black;
   background-color: #d4d5ce;
+  cursor: pointer;
+}
+
+.contato__formulario input[type=submit]:disabled {
+  /* opacity: .3; */
+  background-color: blue;
 }
 
 .contato__formulario input[type=submit]:hover {

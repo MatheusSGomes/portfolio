@@ -340,24 +340,24 @@
             </div>
 
             <div class="input-container">
-              <input type="email" placeholder="E-mail" required>
-              <label class="input-label" for="nome"></label>
+              <input type="email" placeholder="E-mail" data-tipo="email" id="email" minlength="1" maxlength="50" pattern="^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$" required>
+              <label class="input-label" for="email"></label>
               <span class="input__span--erro">Este campo não está válido</span>
             </div>
 
             <div class="input-container">
-              <input type="text" placeholder="Assunto" required>
-              <label class="input-label" for="nome"></label>
+              <input type="text" placeholder="Assunto" data-tipo="assunto" id="assunto" minlength="2" maxlength="50" required>
+              <label class="input-label" for="assunto"></label>
               <span class="input__span--erro">Este campo não está válido</span>
             </div>
 
             <div class="input-container">
-              <textarea placeholder="Mensagem" required></textarea>
-              <label class="input-label" for="nome"></label>
+              <textarea placeholder="Mensagem" data-tipo="mensagem" id="mensagem" minlength="5" maxlength="300" required></textarea>
+              <label class="input-label" for="mensagem"></label>
               <span class="input__span--erro">Este campo não está válido</span>
             </div>
 
-            <input type="submit" value="Enviar mensagem">
+            <input type="submit" value="Enviar mensagem" disabled>
           </form>
         </div>
     </section>
