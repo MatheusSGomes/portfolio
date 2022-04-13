@@ -10,8 +10,6 @@ let formularioTodoPreenchido = false;
 
 inputSubmit.disabled = true;
 
-// console.log(inputSubmit.disabled);
-
 formElements.forEach((campo) => {
   const inputTipo = campo.dataset.tipo;
   const inputMaxLength = campo.maxLength;

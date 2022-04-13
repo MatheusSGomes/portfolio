@@ -1,0 +1,55 @@
+.projeto__informacoes h3,
+.projeto__informacoes p {
+  margin-top: .4rem;
+  margin-bottom: .7rem;
+}
+
+.projeto__informacoes h3,
+.projeto__informacoes p {
+    text-align: center;
+}
+
+.projeto__informacoes--botoes {
+  display: flex;
+  justify-content: center;
+}
+
+.projeto__informacoes button {
+  border: 0px;
+  background-color: transparent;
+  padding: 0px;
+  opacity: .5;
+}
+
+.projeto__informacoes button:last-child {
+  margin-left: 10px;
+}
+
+.projeto__informacoes button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.projeto__informacoes button::after {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-image: url('../../img/arrow-up-right.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 968px) {
+  .projeto__informacoes h3,
+  .projeto__informacoes p {
+    text-align: left;
+    margin-top: 0rem;
+  }
+
+  .projeto__informacoes--botoes {
+    display: flex;
+    justify-content: left;
+  }
+}

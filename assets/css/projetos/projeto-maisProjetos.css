@@ -1,0 +1,16 @@
+/* .projeto__mais-projetos {} */
+
+.projeto__mais-projetos {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #808080;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background .3s ease-in-out;
+}
+
+.projeto__mais-projetos:hover {
+  opacity: .7;
+  background-color: #efefef;
+}

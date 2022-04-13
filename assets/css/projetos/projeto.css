@@ -1,0 +1,18 @@
+.projeto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 968px) {
+  .projeto {
+    flex-direction: row;
+  }
+
+  .projeto:nth-child(2) {
+    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+}

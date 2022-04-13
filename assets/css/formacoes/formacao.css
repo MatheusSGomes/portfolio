@@ -1,27 +1,7 @@
-.formacoes-academicas {
-  padding-bottom: 4rem;
-}
-
-.formacoes-academicas h2 {
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
-}
-
-.formacoes-e-cursos {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  
-}
-
 .formacao {
   display: flex;
   flex-direction: column;
   width: 130px;
-  
 }
 
 .formacao img {
