@@ -44,8 +44,24 @@
   border-radius: 5px;
 }
 
-.contato__formulario input:invalid,
+.contato__formulario input:focus,
+.contato__formulario textarea:focus {
+  border-bottom: 2px solid #d4d5ce;
+  outline: none;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+/*.contato__formulario input:invalid,
 .contato__formulario textarea:invalid {
+   border-bottom: 2px solid lightcoral;
+  outline: none;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem; 
+}*/
+
+.contato__formulario input.campo--invalido,
+.contato__formulario textarea.campo--invalido {
   border-bottom: 2px solid lightcoral;
   outline: none;
   border-bottom-left-radius: 0rem;
@@ -54,14 +70,6 @@
 
 .contato__formulario textarea {
   resize: vertical;
-}
-
-.contato__formulario input:focus,
-.contato__formulario textarea:focus {
-  border-bottom: 2px solid #d4d5ce;
-  outline: none;
-  border-bottom-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
 }
 
 .contato__formulario span {
@@ -82,8 +90,9 @@
 }
 
 .contato__formulario input[type=submit]:disabled {
-  /* opacity: .3; */
-  background-color: blue;
+  opacity: .4;
+  background-color: #ddd;
+  color: #888;
 }
 
 .contato__formulario input[type=submit]:hover {

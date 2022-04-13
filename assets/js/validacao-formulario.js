@@ -1,8 +1,10 @@
 const inputs = document.querySelectorAll('input');
-const inputButton = document.querySelector('input[type=submit]');
 const textarea = document.querySelector('textarea');
 
-inputs.forEach((input) => {
+const form = document.forms;
+const formElements = Array.from(form[0].elements);
+
+formElements.forEach((input) => {
 
   input.addEventListener('blur', (event) => {
     const inputTipo = input.dataset.tipo;
@@ -13,12 +15,13 @@ inputs.forEach((input) => {
     if(input.validity.valid) {
 
       span.style.display = 'none';
-      inputButton.removeAttribute('disabled');
+      input.classList.remove("campo--invalido");
       
     } else if(input.value == '') {
       
       span.style.display = 'block';
       span.innerHTML = `O campo de ${inputTipo} não pode ficar vazio.`;
+      input.classList.add("campo--invalido");
 
     } else if(input.value.length >= inputMaxLength) {
 
@@ -40,36 +43,4 @@ inputs.forEach((input) => {
       }
     }
   })
-})
-
-textarea.addEventListener('blur', () => {
-  const textareaTipo = textarea.dataset.tipo;
-  const textareaMaxLength = textarea.maxLength;
-  const span = textarea.parentElement.querySelector('span');
-  const textareaMinLength = textarea.minLength;
-
-  if(textarea.validity.valid) {
-
-    span.style.display = 'none';
-    
-  } else if(textarea.value == '') {
-    
-    span.style.display = 'block';
-    span.innerHTML = `O campo de ${textareaTipo} não pode ficar vazio.`;
-
-  } else if(textarea.value.length >= textareaMaxLength) {
-
-    span.style.display = 'block';
-    span.innerHTML = `O campo de ${textareaTipo} não pode ter mais do que ${textareaMaxLength} caracteres.`;
-
-  } else if(textarea.value.length <= textareaMinLength) {
-
-      span.style.display = 'block';
-      span.innerHTML = `Esse campo não pode ter menos do que ${textareaMinLength} caracteres.`;
-
-  } else {
-
-    span.style.display = 'block';
-    span.innerHTML = 'Campo Inválido';
-  }
 })
