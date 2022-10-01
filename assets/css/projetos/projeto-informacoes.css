@@ -21,6 +21,7 @@
   opacity: .5;
   text-decoration: none;
   color: #000;
+  margin-left: 15px;
 }
 
 .projeto__informacoes a:last-child {
