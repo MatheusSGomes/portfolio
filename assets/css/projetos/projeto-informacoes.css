@@ -14,23 +14,25 @@
   justify-content: center;
 }
 
-.projeto__informacoes button {
+.projeto__informacoes a {
   border: 0px;
   background-color: transparent;
   padding: 0px;
   opacity: .5;
+  text-decoration: none;
+  color: #000;
 }
 
-.projeto__informacoes button:last-child {
+.projeto__informacoes a:last-child {
   margin-left: 10px;
 }
 
-.projeto__informacoes button:hover {
+.projeto__informacoes a:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-.projeto__informacoes button::after {
+.projeto__informacoes a::after {
   display: inline-block;
   content: '';
   width: 10px;
